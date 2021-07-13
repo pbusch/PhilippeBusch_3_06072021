@@ -39,28 +39,40 @@
   }
 
   h2 {
-      font-size: 1rem;
-      font-weight: 300;
+      font-size: 1.4rem;
+      font-weight: 900;
   }
 
   h3 {
-      font-size: 1rem;
+      font-size: 1.1rem;
+      font-weight: 900;
   }
 
-  .fa-decoration01 {
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  h5  {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+
+  .fa--decoration01 {
       margin-right: 15px;
       margin-left: -30px;
   }
 
-  .fa-decoration02 {
+  .fa--decoration02 {
       padding:25px;
   }
 
-  .fa-decoration03 {
+  .fa--decoration03 {
       font-size: 1.4rem;
   }
 
-  .logo {
+  .header__logo {
       display: flex;
       height: 62px;
       width:100%;
@@ -70,7 +82,7 @@
       position: relative;
   }
 
-  .logo img {
+  .header__logo__img {
       width:164px;
   }
 
@@ -82,7 +94,7 @@
         background-color:rgb(218, 223, 230);
     }
 
-    .gps h2 {
+    .gps--h2 {
         color:rgba(19, 20, 20, 0.664);
         font-weight: 600;
     }
@@ -96,17 +108,17 @@
         background-color:rgb(243, 242, 240);
     }
 
-    .titre h1 {
+    .titre--h1 {
         max-width:250px;
         padding-top: 15px;
     }
 
-    .titre h2 {
-        max-width:300px;
+    .titre--h2 {
+        max-width:350px;
         margin-top: 0;
     }
 
-    .btn {
+    .titre__btn {
         background-color: #ac4caf; 
         border: none;
         color: white;
@@ -120,19 +132,22 @@
         border-radius: 35px;
     }
 
-    .fonctionnement h1, .restaurants h1 {
-        padding-left:10px;
-        padding-top:35px;
+    .fct {
+        padding: 35px 0;
     }
 
-    .nav-etapes, .cards {
+    .fct__titre, .rest__titre {
+        padding-left:10px;
+    }
+
+    .fct__nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    nav {
+    .fct__nav__etape {
         display:flex;
         align-items: center;
         background-color:rgb(243, 242, 240);
@@ -142,7 +157,7 @@
 
     }
 
-    .num-etape {
+    .fct__nav__etape__num {
         background-color: #ac4caf;
         border-radius: 50%;
         padding: 3px 7px;
@@ -150,27 +165,35 @@
         margin-left:-10px;
     }
 
-    .restaurants  {
+    .rest {
         background-color:rgb(243, 242, 240);
+        padding: 35px 0;
     }
 
-    .card {
+    .rest__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rest__cards__card {
         display:flex;
         flex-direction: column;
         border-radius: 15px;
         width:90%;
-        align-items: center;
+        align-items:center;
         background-color: white;
         margin-bottom: 15px;
     }
 
 
-    .card__img {
+    .rest__cards__card__img {
         display:flex;
         flex-direction: column;
     }
 
-    .card__img img {
+    .rest__cards__card__img img {
         object-fit: cover;
         height:180px;
         width:100%;
@@ -178,7 +201,7 @@
         border-top-left-radius: 15px;
     }
 
-    .card__img__new {
+    .rest__cards__card__img__new {
         position: absolute;
         right:30px;
         background-color: aqua;
@@ -187,7 +210,7 @@
         padding: 0 5px;
     }
 
-    .card__info {
+    .rest__cards__card__info {
         width: 100%;
         display:flex;
         align-items: center;
@@ -195,9 +218,22 @@
         height:80px;
     }
 
-    .card__info h2, .card__info h3 {
+    .rest__cards__card__info h3, .rest__cards__card__info h4 {
         padding:0 0 5px 0;
         margin:0 0 0 -40px;
+    }
+
+    footer  {
+        background-color: rgb(36, 31, 31);
+        color:white;
+        padding: 20px;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .footer__logo h3  {
+        font-family: Shrikhand;
+        font-weight: 300;
     }
 
 
