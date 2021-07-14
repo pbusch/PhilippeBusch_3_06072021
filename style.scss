@@ -1,0 +1,222 @@
+/* shrikhand-regular - latin */
+@font-face {
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shrikhand-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/shrikhand-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/shrikhand-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/shrikhand-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/shrikhand-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/shrikhand-v6-latin-regular.svg#Shrikhand') format('svg'); /* Legacy iOS */
+  }
+
+  /* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v27-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v27-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+
+  $primary-color: #9356DC;
+  $secondary-color: #FF79DA;
+  $tertiary-color: #99E2D0;
+  $background-color:rgb(243, 242, 240);
+
+  @mixin flex($flex-direction: column) {
+    display:flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      font-family:Roboto;
+      width:375px;
+  }
+
+  h1 {
+      font-size: 1.4rem;
+      font-weight: 900;
+  }
+
+  h2 {
+      font-size: 1.4rem;
+      font-weight: 900;
+  }
+
+  h3 {
+      font-size: 1.1rem;
+      font-weight: 900;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  h5  {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+
+  .fa--decoration01 {
+      margin-right: 15px;
+      margin-left: -30px;
+  }
+
+  .fa--decoration02 {
+      padding:25px;
+  }
+
+  .fa--decoration03 {
+      font-size: 1.4rem;
+  }
+
+  .header__logo {
+      @include flex;
+      height: 62px;
+      width:100%;
+      box-shadow: 0px 5px 5px 0px rgb(193, 193, 197);
+      position: relative;
+        & img {
+            width: 164px;
+        }
+  }
+
+
+  .gps {
+        @include flex(row);
+        height: 48px;
+        background-color:rgb(218, 223, 230);
+            & h2 {
+                color:rgba(19, 20, 20, 0.664);
+                font-weight: 300; 
+            }
+    }
+
+    .titre {
+        @include flex;
+        text-align: center;
+        height:286px;
+        background-color:rgb(243, 242, 240);
+            &__first {
+                max-width:250px;
+                padding-top: 15px;
+            }
+            &__second {
+                max-width:350px;
+                margin-top: 0;
+            }
+            &__btn {
+                background-color: #ac4caf; 
+                border: none;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 10px 2px;
+                cursor: pointer;
+                border-radius: 35px; 
+            }
+    }
+
+    .fct {
+        padding: 35px 0;
+        &__nav {
+            @include flex;
+                &__etape {
+                    display:flex;
+                    align-items: center;
+                    background-color:rgb(243, 242, 240);
+                    border-radius: 25px;
+                    width: 90%;
+                    margin-bottom: 15px;
+                        &__num {
+                            background-color: $primary-color;
+                            border-radius: 50%;
+                            padding: 3px 7px;
+                            color: white;
+                            margin-left:-10px;
+                        }
+                }
+        }
+    }
+
+    .fct__titre, .rest__titre {
+        padding-left:10px;
+            
+    }
+
+    .rest {
+        background-color:rgb(243, 242, 240);
+        padding: 35px 0;
+            &__cards {
+                @include flex;
+                    &__card  {
+                        @include flex;
+                        border-radius: 15px;
+                        width:90%;
+                        background-color: white;
+                        margin-bottom: 15px; 
+                            &__img {
+                                display:flex;
+                                flex-direction: column;*
+                                &__new {
+                                    position: absolute;
+                                    right:30px;
+                                    background-color: aqua;
+                                    color: green;
+                                    margin-top: 10px;
+                                    padding: 0 5px; 
+                                }
+
+                                & img {
+                                    object-fit: cover;
+                                    height:180px;
+                                    width:100%;
+                                    border-top-right-radius: 15px;
+                                    border-top-left-radius: 15px;
+                                }
+                            }
+                            
+                            &__info {
+                                width: 100%;
+                                display:flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                height:80px;
+                            }
+                    }
+            }
+    }
+
+    .rest__cards__card__info h3, .rest__cards__card__info h4 {
+        padding:0 0 5px 0;
+        margin:0 0 0 -40px;
+    }
+
+    .footer  {
+        background-color: rgb(36, 31, 31);
+        color:white;
+        padding: 20px;
+        font-size: 1rem;
+        font-weight: 300;
+            &__logo h3 {
+                font-family: Shrikhand;
+                font-weight: 300;
+            }
+    }
