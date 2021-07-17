@@ -1,91 +1,12 @@
-/* shrikhand-regular - latin */
-@font-face {
-    font-family: 'Shrikhand';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/shrikhand-v6-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/shrikhand-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/shrikhand-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/shrikhand-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/shrikhand-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/shrikhand-v6-latin-regular.svg#Shrikhand') format('svg'); /* Legacy iOS */
-  }
 
-  /* roboto-regular - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v27-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/roboto-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/roboto-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/roboto-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/roboto-v27-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
-  }
-
-  $primary-color: #9356DC;
-  $secondary-color: #FF79DA;
-  $tertiary-color: #99E2D0;
-  $background-color:rgb(243, 242, 240);
-
-  @mixin flex($flex-direction: column) {
-    display:flex;
-    flex-direction: $flex-direction;
-    justify-content: center;
-    align-items: center;
-  }
-
-  body {
-      margin: 0;
-      padding: 0;
-      font-family:Roboto;
-      width:375px;
-  }
-
-  h1 {
-      font-size: 1.4rem;
-      font-weight: 900;
-  }
-
-  h2 {
-      font-size: 1.4rem;
-      font-weight: 900;
-  }
-
-  h3 {
-      font-size: 1.1rem;
-      font-weight: 900;
-  }
-
-  h4 {
-    font-size: 1.1rem;
-    font-weight: 300;
-  }
-
-  h5  {
-    font-size: 1rem;
-    font-weight: 900;
-  }
-
-
-  .fa--decoration01 {
-      margin-right: 15px;
-      margin-left: -30px;
-  }
-
-  .fa--decoration02 {
-      padding:25px;
-  }
-
-  .fa--decoration03 {
-      font-size: 1.4rem;
-  }
+@import "./sass/Utils/variables";
+@import "./sass/Utils/mixins";
+@import "./sass/Base/base";
+@import "./sass/Base/fonts";
+@import "./sass/Base/typography";
 
   .header__logo {
-      @include flex;
+      @include flex(row);
       height: 62px;
       width:100%;
       box-shadow: 0px 5px 5px 0px rgb(193, 193, 197);
@@ -94,7 +15,6 @@
             width: 164px;
         }
   }
-
 
   .gps {
         @include flex(row);
@@ -110,7 +30,7 @@
         @include flex;
         text-align: center;
         height:286px;
-        background-color:rgb(243, 242, 240);
+        background-color:$background-color;
             &__first {
                 max-width:250px;
                 padding-top: 15px;
@@ -174,7 +94,7 @@
                         margin-bottom: 15px; 
                             &__img {
                                 display:flex;
-                                flex-direction: column;*
+                                flex-direction: column;
                                 &__new {
                                     position: absolute;
                                     right:30px;
@@ -209,14 +129,60 @@
         margin:0 0 0 -40px;
     }
 
+    .menu {
+        @include flex;
+        &__img img{
+            object-fit: cover;
+            height: 250px;
+        }
+        &__titre {
+            @include flex(row);
+            width:100%;
+            justify-content: space-evenly;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            margin-top:-60px;
+            background-color: $background-color;
+                & h2 {
+            font-family: Shrikhand;
+            font-size: 1.7rem;
+            font-weight: 100;
+                }
+        }
+        &__section {
+            @include flex;
+            align-items: center;
+            width:95%;
+            background-color: $background-color;
+        }
+        &__section__card {
+            @include flex;
+            justify-content: center;
+            align-items: center;
+            width:90%;
+            background-color: white;
+            padding: 5px;
+        }
+    }
+
     .footer  {
-        background-color: rgb(36, 31, 31);
+        background-color: #3f3e3e;
         color:white;
-        padding: 20px;
+        padding: 10px 20px;
         font-size: 1rem;
         font-weight: 300;
             &__logo h3 {
                 font-family: Shrikhand;
                 font-weight: 300;
+                margin-bottom: 10px;
+            }
+            &__block__nav {
+                @include flex(row);
+                justify-content: left;
+                & h5 {
+                    padding: 3px;
+                    margin: 0;
+                    font-weight: 100;
+                }
             }
     }

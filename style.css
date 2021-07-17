@@ -1,4 +1,10 @@
-/* shrikhand-regular - latin */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  width: 375px;
+}
+
 @font-face {
   font-family: 'Shrikhand';
   font-style: normal;
@@ -9,7 +15,6 @@
   /* Legacy iOS */
 }
 
-/* roboto-regular - latin */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -18,13 +23,6 @@
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v27-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v27-latin-regular.woff") format("woff"), url("../fonts/roboto-v27-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v27-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
-  width: 375px;
 }
 
 h1 {
@@ -65,14 +63,23 @@ h5 {
   font-size: 1.4rem;
 }
 
+.fa--decoration04 {
+  padding-right: 10px;
+}
+
+.fa--decoration05 {
+  position: absolute;
+  left: 25px;
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -252,7 +259,6 @@ h5 {
           flex-direction: column;
 }
 
-*
 .rest__cards__card__img__new {
   position: absolute;
   right: 30px;
@@ -289,10 +295,102 @@ h5 {
   margin: 0 0 0 -40px;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+}
+
+.menu__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -60px;
+  background-color: #f3f2f0;
+}
+
+.menu__titre h2 {
+  font-family: Shrikhand;
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+.menu__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  width: 95%;
+  background-color: #f3f2f0;
+}
+
+.menu__section__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: white;
+  padding: 5px;
+}
+
 .footer {
-  background-color: #241f1f;
+  background-color: #3f3e3e;
   color: white;
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 1rem;
   font-weight: 300;
 }
@@ -300,5 +398,31 @@ h5 {
 .footer__logo h3 {
   font-family: Shrikhand;
   font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.footer__block__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.footer__block__nav h5 {
+  padding: 3px;
+  margin: 0;
+  font-weight: 100;
 }
 /*# sourceMappingURL=style.css.map */
