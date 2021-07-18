@@ -1,0 +1,9 @@
+.gps {
+    @include flex(row);
+    height: 48px;
+    background-color:rgb(218, 223, 230);
+        & h2 {
+            color:rgba(19, 20, 20, 0.664);
+            font-weight: 300; 
+        }
+}

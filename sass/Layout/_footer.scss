@@ -1,0 +1,21 @@
+.footer  {
+    background-color: #3f3e3e;
+    color:white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 300;
+        &__logo h3 {
+            font-family: Shrikhand;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        &__block__nav {
+            @include flex(row);
+            justify-content: left;
+            & h5 {
+                padding: 3px;
+                margin: 0;
+                font-weight: 100;
+            }
+        }
+}

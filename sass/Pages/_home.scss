@@ -1,0 +1,106 @@
+.titre {
+    @include flex;
+    text-align: center;
+    height:286px;
+    background-color:$background-color;
+        &__first {
+            max-width:250px;
+            padding-top: 15px;
+        }
+        &__second {
+            max-width:350px;
+            margin-top: 0;
+        }
+        &__btn {
+            background-color: #ac4caf; 
+            border: none;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 35px; 
+        }
+}
+
+.fct {
+    padding: 35px 0;
+    &__titre {
+        padding-left:10px;
+    }
+    &__nav {
+        @include flex;
+            &__etape {
+                display:flex;
+                align-items: center;
+                background-color:rgb(243, 242, 240);
+                border-radius: 25px;
+                width: 90%;
+                margin-bottom: 15px;
+                    &__num {
+                        background-color: $primary-color;
+                        border-radius: 50%;
+                        padding: 3px 7px;
+                        color: white;
+                        margin-left:-10px;
+                    }
+            }
+    }
+}
+
+.rest {
+    background-color:rgb(243, 242, 240);
+    padding: 35px 0;
+        &__titre  {
+            padding-left:10px;
+        }
+        &__cards {
+            @include flex;
+                &__card  {
+                    @include flex;
+                    border-radius: 15px;
+                    width:90%;
+                    background-color: white;
+                    margin-bottom: 15px; 
+                        &__img {
+                            display:flex;
+                            flex-direction: column;
+                            &__new {
+                                position: absolute;
+                                left:250px;
+                                background-color:$tertiary-color;
+                                color:green;
+                                margin-top: 25px;
+                                padding: 0 2px; 
+                            }
+
+                            & img {
+                                object-fit: cover;
+                                height:180px;
+                                width:100%;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
+                            }
+                        }
+                        
+                        &__info {
+                            width: 100%;
+                            display:flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            height:80px;
+                        }
+                        &__info h3 {
+                            padding:0 0 5px 0;
+                            margin:0 0 0 -40px;
+                        }
+                        &__info h4 {
+                            padding:0 0 5px 0;
+                            margin:0 0 0 -40px;
+                        }
+                }
+        }
+}

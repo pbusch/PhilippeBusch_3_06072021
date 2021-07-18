@@ -1,223 +1,29 @@
 
 @import "./sass/Utils/variables";
 @import "./sass/Utils/mixins";
+@import "./sass/Base/reset";
 @import "./sass/Base/base";
 @import "./sass/Base/fonts";
 @import "./sass/Base/typography";
+@import "./sass/Composants/gps";
+@import "./sass/Layout/nav";
+@import "./sass/Layout/header";
+@import "./sass/Layout/footer";
+@import "./sass/Layout/menus";
+@import "./sass/Pages/home";
 
-  .header__logo {
-      @include flex(row);
-      height: 62px;
-      width:100%;
-      box-shadow: 0px 5px 5px 0px rgb(193, 193, 197);
-      position: relative;
-        & img {
-            width: 164px;
-        }
-  }
 
-  .gps {
-        @include flex(row);
-        height: 48px;
-        background-color:rgb(218, 223, 230);
-            & h2 {
-                color:rgba(19, 20, 20, 0.664);
-                font-weight: 300; 
-            }
-    }
 
-    .titre {
-        @include flex;
-        text-align: center;
-        height:286px;
-        background-color:$background-color;
-            &__first {
-                max-width:250px;
-                padding-top: 15px;
-            }
-            &__second {
-                max-width:350px;
-                margin-top: 0;
-            }
-            &__btn {
-                background-color: #ac4caf; 
-                border: none;
-                color: white;
-                padding: 15px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 10px 2px;
-                cursor: pointer;
-                border-radius: 35px; 
-            }
-    }
 
-    .fct {
-        padding: 35px 0;
-        &__nav {
-            @include flex;
-                &__etape {
-                    display:flex;
-                    align-items: center;
-                    background-color:rgb(243, 242, 240);
-                    border-radius: 25px;
-                    width: 90%;
-                    margin-bottom: 15px;
-                        &__num {
-                            background-color: $primary-color;
-                            border-radius: 50%;
-                            padding: 3px 7px;
-                            color: white;
-                            margin-left:-10px;
-                        }
-                }
-        }
-    }
 
-    .fct__titre, .rest__titre {
-        padding-left:10px;
-            
-    }
 
-    .rest {
-        background-color:rgb(243, 242, 240);
-        padding: 35px 0;
-            &__cards {
-                @include flex;
-                    &__card  {
-                        @include flex;
-                        border-radius: 15px;
-                        width:90%;
-                        background-color: white;
-                        margin-bottom: 15px; 
-                            &__img {
-                                display:flex;
-                                flex-direction: column;
-                                &__new {
-                                    position: absolute;
-                                    right:30px;
-                                    background-color: aqua;
-                                    color: green;
-                                    margin-top: 10px;
-                                    padding: 0 5px; 
-                                }
 
-                                & img {
-                                    object-fit: cover;
-                                    height:180px;
-                                    width:100%;
-                                    border-top-right-radius: 15px;
-                                    border-top-left-radius: 15px;
-                                }
-                            }
-                            
-                            &__info {
-                                width: 100%;
-                                display:flex;
-                                align-items: center;
-                                justify-content: space-around;
-                                height:80px;
-                            }
-                    }
-            }
-    }
+  
 
-    .rest__cards__card__info h3, .rest__cards__card__info h4 {
-        padding:0 0 5px 0;
-        margin:0 0 0 -40px;
-    }
+    
 
-    .menu {
-        @include flex;
-        &__img img{
-            object-fit: cover;
-            height: 250px;
-        }
-        &__titre {
-            @include flex(row);
-            width:100%;
-            justify-content: space-evenly;
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
-            margin-top:-60px;
-            background-color: $background-color;
-                & h2 {
-            font-family: Shrikhand;
-            font-size: 1.7rem;
-            font-weight: 100;
-                }
-        }
-        &__section {
-            @include flex;
-            align-items: right;
-            width:100%;
-            background-color: $background-color;
-        }
-        &__section__titre {
-            width:100%;
-            text-align: left;
-            & h3 {
-                font-weight: 100;
-                margin:0 0 2% 5%; 
-            }
-            & hr {
-                height:3px;
-                color:aquamarine;
-                background-color:aquamarine;
-                max-width:40px;
-                margin:0 0 0 5%;  
-                border: 0;
-            }
-        }
-
-        &__section__card {
-            @include flex;
-            align-items: flex-start;
-            width:90%;
-            background-color: white;
-            margin: 10px;
-            border-radius: 15px;
         
-            & h4 {
-                font-weight: 900;
-                margin:0;
-                padding:5px;
-                
-            }
-            & h5 {
-                font-weight: 300;
-                padding-right: 5px;
-                margin:0;
-                padding:5px;
-            }
-            &__details {
-                @include flex(row);
-                width:100%;
-                justify-content: space-between;
-            }
-        }
-    }
+        
+    
 
-    .footer  {
-        background-color: #3f3e3e;
-        color:white;
-        padding: 10px 20px;
-        font-size: 1rem;
-        font-weight: 300;
-            &__logo h3 {
-                font-family: Shrikhand;
-                font-weight: 300;
-                margin-bottom: 10px;
-            }
-            &__block__nav {
-                @include flex(row);
-                justify-content: left;
-                & h5 {
-                    padding: 3px;
-                    margin: 0;
-                    font-weight: 100;
-                }
-            }
-    }
+
