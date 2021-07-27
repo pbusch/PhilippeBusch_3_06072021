@@ -210,9 +210,13 @@ a:link, a:visited, a:active, a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-top: -60px;
+  margin-bottom: 0;
   background-color: #f3f2f0;
 }
 
@@ -220,6 +224,7 @@ a:link, a:visited, a:active, a:hover {
   font-family: Shrikhand;
   font-size: 1.7rem;
   font-weight: 100;
+  margin-bottom: 0;
 }
 
 .menu__section {
@@ -251,7 +256,7 @@ a:link, a:visited, a:active, a:hover {
 
 .menu__section__titre h3 {
   font-weight: 100;
-  margin: 0 0 2% 5%;
+  margin: 10% 0 2% 5%;
 }
 
 .menu__section__titre hr {
@@ -461,24 +466,30 @@ a:link, a:visited, a:active, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .rest__cards__card__img__new {
   position: absolute;
-  left: 250px;
+  left: 270px;
   background-color: #99E2D0;
   color: green;
-  margin-top: 25px;
+  margin-top: 10px;
   padding: 0 2px;
 }
 
+.rest__cards__card__img__new h3 {
+  padding: 3px;
+  margin: 0;
+}
+
 .rest__cards__card__img img {
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 180px;
   width: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .rest__cards__card__info {

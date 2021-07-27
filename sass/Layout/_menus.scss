@@ -8,14 +8,17 @@
         @include flex(row);
         width:100%;
         justify-content: space-evenly;
+        align-items: baseline;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         margin-top:-60px;
+        margin-bottom: 0;
         background-color: $background-color;
             & h2 {
         font-family: Shrikhand;
         font-size: 1.7rem;
         font-weight: 100;
+        margin-bottom: 0;
             }
     }
     &__section {
@@ -30,7 +33,7 @@
         padding-bottom: 15px;
         & h3 {
             font-weight: 100;
-            margin:0 0 2% 5%; 
+            margin: 10% 0 2% 5%; 
         }
         & hr {
             height:3px;
