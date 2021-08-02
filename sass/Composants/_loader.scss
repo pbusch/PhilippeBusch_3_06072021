@@ -1,0 +1,71 @@
+$anim-dur: 100ms;
+$num-bars: 8;
+
+.loader {
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    transform: scale(0);
+    background: #22222256;
+    animation: show  3000ms;
+    
+    
+}
+.loader__anim {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+
+    &__bar {
+      width: 10px;
+      height: 100px;
+      color: #11ffee00;
+      background: #fff;
+      display: inline-block;
+      transform-origin: bottom center;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      animation: loader 1.2s linear 2;
+      opacity:0;
+
+      @for $i from 1 through $num-bars {
+        &--#{$i} {
+              animation-delay: $anim-dur * $i;
+         }
+      }
+    }
+}
+ 
+  @keyframes loader {
+    0% {
+      transform: scaleY(0.1);
+      opacity: 1;
+      
+    }
+    50% {
+      transform: scaleY(1);
+      background: $primary-color;
+    }
+    100% {
+      transform: scaleY(0.1);
+      background: transparent;
+    }
+  }
+  @keyframes show {
+      0% {
+        opacity:1;
+        transform: scale(1);
+        
+      }
+      100% {
+          //opacity:0;
+          display: none;
+          transform: scale(1);
+          
+      }
+      
+  }

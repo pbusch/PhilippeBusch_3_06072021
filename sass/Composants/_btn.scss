@@ -1,0 +1,129 @@
+$border-rad: 2rem;
+$clr-btn: #15DEA5;
+
+@keyframes bar{
+    0% {
+        transform: scaleX(0);
+    }
+
+    30% {
+        transform: scaleX(2);
+    }
+
+    50% {
+       transform:translateX(200px);
+    }
+    100% {
+        transform: scaleX(10);
+    }
+}
+
+.btn {
+    border-radius: $border-rad;
+    background-color: $clr-btn;
+    animation: bar 1000ms 1000ms paused;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    //position: relative;
+    //transform: scale(1);
+
+    &:hover {
+            //opacity: 1;
+            //transform: scale(2);
+            //animation-name: bar;
+            //animation-duration: 1000ms;
+            animation-play-state: running;
+        }
+    }
+
+$cd-txt: #6300a0;
+$cd-txt--invalid: #fff;
+$cd-danger : #b20a37 ;
+.form {
+    &__group {
+        & input {
+            border: 2px solid;
+            border-radius: 100rem;
+            color: $cd-txt;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            outline: none;
+            padding: .5rem 1.5rem;
+            width: 100%;
+            
+            &:focus {
+                border: 2px solid $cd-txt;
+            }
+            &:not(:focus):invalid {
+                background-color: $cd-danger;
+                border: 2px solid $cd-danger;
+                color: $cd-txt--invalid;
+                animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+                animation-iteration-count: 3;
+            }
+        }
+        
+    }
+}
+
+$shake-intensity: 2%;
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX(-$shake-intensity);
+    }
+}
+
+$cd-bars: #15DEA5;
+$cd-bars-inv: #0E397F;
+$size: 3vh;
+$anim-dur: 1000ms;
+$num-bars: 5;
+$anim-delay: $anim-dur / $num-bars;
+
+.load {
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        background-color: #15DEA5;
+        height: 100%;
+        width: $size;
+        animation: bars $anim-dur backwards ease-in-out infinite alternate;
+        
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+             }
+             &--#{$i}-inv {
+                animation-delay: $anim-delay * $i;
+                animation-direction: alternate-reverse;
+                background-color: $cd-bars-inv;
+
+            }
+        }
+    }
+}
+
+@keyframes bars {
+    100% {
+        transform: scaleY(0.5);
+        
+    }
+    0% {
+        transform: scaleY(1.0);
+    }
+}
+
+
+    
+    
+
+    
+
+

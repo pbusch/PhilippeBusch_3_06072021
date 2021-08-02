@@ -1,3 +1,6 @@
+$menu-delay: 100ms;
+$menus: 9;
+
 .menu {
     @include flex;
     &__img img{
@@ -45,17 +48,30 @@
         }
     }
     &__section__card {
-        @include flex;
-        align-items: flex-start;
+        //@include flex;
+        //align-items: flex-start;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: auto, auto, 0%;
+        grid-template-rows: repeat(2, 1fr);
         width:90%;
         background-color: white;
         margin: 10px;
         border-radius: 15px;
+        opacity: 0;
+        box-shadow: 5px 5px 5px rgb(234, 230, 230);
+        animation: menus 1.5s linear forwards;
+        @for $i from 1 through $menus {
+            &--#{$i} {
+                  animation-delay: $menu-delay * $i;
+             }
+            }
     
         & h4 {
             font-weight: 900;
             margin:0;
             padding:10px 10px 5px 10px;
+            width:300px;
             
         }
         & h5 {
@@ -64,11 +80,78 @@
             margin:0;
             padding:0 10px 10px 10px;
             font-size: 0.9rem;
+            
         }
         &__details {
+            grid-row: 2;
             @include flex(row);
-            width:100%;
             justify-content: space-between;
+            z-index: 4;
         }
+        &__check {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            padding: 25px 38px;
+            background-color: $tertiary-color;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            transform: translateX(110px);
+            transition: all 0.5s ease;
+            z-index: 3;
+
+        }
+        &:hover .menu__section__card__check {
+            visibility: visible;
+            cursor: grab;
+            //animation: slide-check 700ms;
+            transform: translateX(-70px);
+        }
+
+        
 }
+}
+
+@keyframes menus {
+    0% {
+      opacity:0;
+      transform: translateY(20px);
+      
+    }
+
+    30% {
+        transform: translateY(0px);
+      
+    }
+    100% {
+        opacity:1;  
+    }
+    
+}
+
+@keyframes check {
+
+    0% {
+        transform:rotate(-1turn);
+
+    }
+
+    100% {
+        transform:rotate(0);
+          
+    }
+
+}
+
+@keyframes slide-check {
+    0% {
+        transform: translateX(200px);
+        
+        
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }

@@ -59,6 +59,7 @@
         }
         &__cards {
             @include flex;
+            
                 &__card  {
                     @include flex;
                     border-radius: 15px;
