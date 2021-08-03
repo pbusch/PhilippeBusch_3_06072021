@@ -1,11 +1,13 @@
-$menu-delay: 100ms;
+$menu-delay: 400ms;
 $menus: 9;
 
 .menu {
     @include flex;
+    width:100%;
     &__img img{
         object-fit: cover;
-        height: 250px;
+        height: 100%;
+        width:100%;
     }
     &__titre {
         @include flex(row);
@@ -48,11 +50,10 @@ $menus: 9;
         }
     }
     &__section__card {
-        //@include flex;
-        //align-items: flex-start;
         display: grid;
         overflow: hidden;
-        grid-template-columns: auto, auto, 0%;
+        cursor: grab;
+        grid-template-columns: auto 0;
         grid-template-rows: repeat(2, 1fr);
         width:90%;
         background-color: white;
@@ -71,7 +72,9 @@ $menus: 9;
             font-weight: 900;
             margin:0;
             padding:10px 10px 5px 10px;
-            width:300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             
         }
         & h5 {
@@ -80,35 +83,70 @@ $menus: 9;
             margin:0;
             padding:0 10px 10px 10px;
             font-size: 0.9rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             
         }
         &__details {
             grid-row: 2;
             @include flex(row);
             justify-content: space-between;
-            z-index: 4;
+            transition: all 400ms linear;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &__descriptif {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .menu__section__card__details__prix{
+                overflow: visible;
+                text-overflow: unset;
+                white-space: normal;
+            }
+
         }
         &__check {
             grid-column: 2;
             grid-row: 1 / span 2;
             display: flex;
-            justify-self: center;
-            align-self: center;
-            padding: 25px 38px;
+            justify-self: right;
+            position: relative;
+            right:-120px;
+            padding: 25px 42px;
             background-color: $tertiary-color;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
-            transform: translateX(110px);
-            transition: all 0.5s ease;
-            z-index: 3;
-
+            transform: translateX(0);
+            transition: all 400ms linear;
+ 
         }
+        
+        i {
+            transform: rotate(0.5turn);
+            transition: all 100ms linear backwards;
+        }
+
         &:hover .menu__section__card__check {
+            
             visibility: visible;
             cursor: grab;
-            //animation: slide-check 700ms;
-            transform: translateX(-70px);
+            transform-origin: right;
+            transform: translateX(-110px);
+            
+            i {
+                transform: rotate(1turn);
+                
+            }
         }
+        &:hover .menu__section__card__details {
+            padding-right: 100px;
+        }
+       
 
         
 }
@@ -131,10 +169,11 @@ $menus: 9;
     
 }
 
-@keyframes check {
+/*@keyframes check {
 
     0% {
         transform:rotate(-1turn);
+       // display: block;
 
     }
 
@@ -147,11 +186,13 @@ $menus: 9;
 
 @keyframes slide-check {
     0% {
-        transform: translateX(200px);
+        transform: scaleX(0);
+        
         
         
     }
     100% {
-        transform: translateX(0px);
+        transform: scaleX(10px);
+        
     }
-}
+}*/
