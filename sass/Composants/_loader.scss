@@ -10,6 +10,7 @@ $num-bars: 8;
     transform: scale(0);
     background: #22222256;
     animation: show  3000ms;
+    z-index: 1;
     
     
 }

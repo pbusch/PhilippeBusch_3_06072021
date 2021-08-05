@@ -1,4 +1,5 @@
 .footer  {
+
     background-color: #3f3e3e;
     color:white;
     padding: 10px 20px;
@@ -8,14 +9,30 @@
             font-family: Shrikhand;
             font-weight: 300;
             margin-bottom: 10px;
+            text-align: center;
+            @media (max-width: 640px) {
+                text-align: left;
+            }
         }
-        &__block__nav {
+        &__block{
             @include flex(row);
+            justify-content: space-around;
+            @media (max-width: 640px) {
+                @include flex;
+                align-items: flex-start;
+                }
+        
+            &__nav {
+            
+                @include flex(row);
+                
+            
             justify-content: left;
             & h5 {
                 padding: 3px;
                 margin: 0;
                 font-weight: 100;
             }
+        }
         }
 }

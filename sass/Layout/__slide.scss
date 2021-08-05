@@ -83,7 +83,6 @@ i {
         &:hover + .bloc2__check {
             
             transform: scaleX(4);
-            //transform-origin: right;
             background-color: red;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -103,6 +102,9 @@ i {
         white-space: nowrap;
     }
 }
+
+
+
 
 
 

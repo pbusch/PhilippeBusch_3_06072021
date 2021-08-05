@@ -31,12 +31,34 @@ h5  {
 
 .fa--decoration02 {
     padding:25px;
+
 }
 
 .fa--decoration03 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color:white;
+    
+    &:hover {
+        color:$secondary-color;
+    }
+    
 
 }
+
+.fa--decoration03alt {
+    font-size: 1.5rem;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: $background-color;
+    
+    &:hover {
+        color:$secondary-color;
+    }
+    
+
+}
+
+
 
 .fa--decoration04 {
     padding-right: 10px;
@@ -51,6 +73,6 @@ h5  {
 .fa--decoration06 {
     color: $tertiary-color;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 100%;
     padding: 5px;
 }
