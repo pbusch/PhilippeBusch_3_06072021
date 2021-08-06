@@ -140,43 +140,43 @@ h5 {
 }
 
 .loader__anim__bar--1 {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation-delay: 80ms;
+          animation-delay: 80ms;
 }
 
 .loader__anim__bar--2 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 160ms;
+          animation-delay: 160ms;
 }
 
 .loader__anim__bar--3 {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  -webkit-animation-delay: 240ms;
+          animation-delay: 240ms;
 }
 
 .loader__anim__bar--4 {
+  -webkit-animation-delay: 320ms;
+          animation-delay: 320ms;
+}
+
+.loader__anim__bar--5 {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
-.loader__anim__bar--5 {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
 .loader__anim__bar--6 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 480ms;
+          animation-delay: 480ms;
 }
 
 .loader__anim__bar--7 {
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
+  -webkit-animation-delay: 560ms;
+          animation-delay: 560ms;
 }
 
 .loader__anim__bar--8 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 640ms;
+          animation-delay: 640ms;
 }
 
 @-webkit-keyframes loader {
@@ -256,7 +256,7 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   height: 48px;
-  background-color: #dadfe6;
+  background-color: #dcd9d4;
 }
 
 .gps h2 {
@@ -397,7 +397,8 @@ a:link, a:visited, a:active, a:hover {
           justify-content: left;
 }
 
-.footer__block__nav h5 {
+.footer__block__nav a:visited, .footer__block__nav a:link, .footer__block__nav a:active {
+  color: white;
   padding: 3px;
   margin: 0;
   font-weight: 100;
@@ -613,14 +614,17 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .menu__section__card--10 {
-  -webkit-animation-delay: 4000ms;
-          animation-delay: 4000ms;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .menu__section__card h4 {
   font-weight: 900;
   margin: 0;
   padding: 10px 10px 5px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__section__card h5 {
@@ -709,6 +713,10 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .menu__section__card:hover .menu__section__card__details {
+  padding-right: 75px;
+}
+
+.menu__section__card:hover h4 {
   padding-right: 75px;
 }
 

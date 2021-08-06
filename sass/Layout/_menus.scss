@@ -1,5 +1,5 @@
-$menu-delay: 400ms;
-$menus: 10;
+//$menu-delay: 400ms;
+//$menus: 10;
 
 .menu {
     @include flex;
@@ -97,20 +97,22 @@ $menus: 10;
         opacity: 0;
         box-shadow: 5px 5px 5px rgb(234, 230, 230);
         animation: menus 1.5s linear forwards;
-        @for $i from 1 through $menus {
-            &--#{$i} {
-                  animation-delay: $menu-delay * $i;
-             }
-            }
+        @include menus-fadein(9);
+
+        //un menu comprend un plat supplémentaire (10)
+        &--10 {
+            animation-delay: 4s;
+        }
     
         & h4 {
             font-weight: 900;
             margin:0;
             padding:10px 10px 5px 10px;
-            //overflow: hidden;
-            //text-overflow: ellipsis;
-            //white-space: nowrap;
-            
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            //width:200px;
+        
         }
         & h5 {
             font-weight: 300;
@@ -158,8 +160,6 @@ $menus: 10;
         }
         
         i {
-            //transform: rotate(0turn);
-            //transition: all 500ms linear;
             animation: check 200ms ease-in-out;
         }
 
@@ -176,12 +176,17 @@ $menus: 10;
         }
         &:hover .menu__section__card__details {
             padding-right: 75px;
-        }
-       
-
+        }  
         
+        &:hover h4 {
+            padding-right: 75px;
+        }  
+
+
 }
 }
+
+
 
 @keyframes menus {
     0% {

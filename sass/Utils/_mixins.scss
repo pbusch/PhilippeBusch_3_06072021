@@ -12,3 +12,12 @@
       box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.63);
   }
 }
+
+  @mixin menus-fadein($menus:9) {
+    $menu-delay: 400ms;
+    @for $i from 1 through $menus {
+      &--#{$i} {
+            animation-delay: $menu-delay * $i;
+       }
+      }
+  }
