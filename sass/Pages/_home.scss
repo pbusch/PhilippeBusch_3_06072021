@@ -32,7 +32,7 @@
         padding-left:10px;
     }
     &__nav {
-        @media (max-width: 640px) {
+        @media (max-width: 800px) {
             @include flex;
             }
             @include flex(row);

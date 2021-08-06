@@ -1,4 +1,4 @@
-.bloc {
+/*.bloc {
     display: flex;
     flex-direction: row;
     background-color: $background-color;
@@ -26,11 +26,12 @@
         }
     }
 }
+*/
 
 i {
-    //transform:rotate();
     transition: all 1s ease-in-out;
 }
+
 
 .bloc__check {
     display: flex;
@@ -53,10 +54,10 @@ i {
     transition: all 500ms ease-in-out;
 }
 
-.bloc__check--anim-check {
+/*.bloc__check--anim-check {
 
     transform: rotate(1turn);
-}
+}*/
 
 @keyframes slide-check {
     0% {

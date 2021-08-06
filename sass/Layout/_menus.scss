@@ -4,6 +4,8 @@
 .menu {
     @include flex;
     width:100%;
+    max-width: 900px;
+    margin: auto;
     
     &__img {
         max-height: 250px;
@@ -26,10 +28,10 @@
         object-position: 0 -160px;
         }
 
-        @media (min-width: 1318px) {
+       /* @media (min-width: 1318px) {
         
             object-position: 0 -400px;
-            }
+            }*/
 
 
         height: 100%;
@@ -63,8 +65,9 @@
     }
     &__section {
         @include flex;
-        align-items: right;
+        //align-items: right;
         width:100%;
+        
         background-color: $background-color;
     }
     &__section__titre {
@@ -73,11 +76,10 @@
         padding-bottom: 15px;
         & h3 {
             font-weight: 100;
-            margin: 10% 0 2% 5%; 
+            margin: 20px 0 2% 5%; 
         }
         & hr {
             height:3px;
-            color:aquamarine;
             background-color:aquamarine;
             max-width:40px;
             margin:0 0 0 5%;  
@@ -89,7 +91,7 @@
         overflow: hidden;
         cursor: grab;
         grid-template-columns: auto 0;
-        grid-template-rows: repeat(2, 1fr);
+        //grid-template-rows: repeat(2, 1fr);
         width:95%;
         background-color: white;
         margin: 10px;
@@ -99,7 +101,7 @@
         animation: menus 1.5s linear forwards;
         @include menus-fadein(9);
 
-        //un menu comprend un plat supplémentaire (10)
+        //pour l'unique menu qui comprends un plat supplémentaire (10)
         &--10 {
             animation-delay: 4s;
         }
@@ -111,7 +113,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            //width:200px;
+            
         
         }
         & h5 {
@@ -220,7 +222,7 @@
 
 }
 
-@keyframes slide-check {
+/*@keyframes slide-check {
     0% {
         transform: scaleX(0);
         
@@ -232,3 +234,4 @@
         
     }
 }
+*/
