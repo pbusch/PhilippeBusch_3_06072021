@@ -382,6 +382,7 @@ a:link, a:visited, a:active, a:hover {
 
 .footer {
   background-color: #3f3e3e;
+  background-color: #464138;
   color: white;
   padding: 10px 20px;
   font-size: 1rem;
@@ -492,10 +493,6 @@ a:link, a:visited, a:active, a:hover {
 .menu__img img {
   -o-object-fit: cover;
      object-fit: cover;
-  /* @media (min-width: 1318px) {
-        
-            object-position: 0 -400px;
-            }*/
   height: 100%;
   width: 100%;
 }
@@ -827,19 +824,6 @@ a:link, a:visited, a:active, a:hover {
   }
 }
 
-/*@keyframes slide-check {
-    0% {
-        transform: scaleX(0);
-        
-        
-        
-    }
-    100% {
-        transform: scaleX(10px);
-        
-    }
-}
-*/
 .titre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,7 +860,6 @@ a:link, a:visited, a:active, a:hover {
   padding: 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 10px 2px;
   cursor: pointer;
@@ -937,6 +920,8 @@ a:link, a:visited, a:active, a:hover {
   width: 90%;
   margin-bottom: 15px;
   margin-left: 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .fct__nav__etape:hover {
@@ -1019,6 +1004,8 @@ a:link, a:visited, a:active, a:hover {
   width: 300px;
   margin: 15px 15px !important;
   background-color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 640px) {
