@@ -24,13 +24,14 @@
                 @include flex(row);              
                 justify-content: left;
                 & a:visited, a:link, a:active {
+                    @include flex(row);
                     color: white;
                     padding: 3px;
                     margin: 0;
                     font-weight: 100;
-                }
-
-
-        }
+                    }
+                
+                
+            }
     }
 }

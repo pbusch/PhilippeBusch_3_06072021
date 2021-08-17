@@ -47,7 +47,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -243,6 +243,10 @@ h5 {
           box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.63);
 }
 
+.btnmenu {
+  margin: 30px 0 70px;
+}
+
 i {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -279,6 +283,7 @@ i {
 
 .fa--decoration04 {
   padding-right: 10px;
+  width: 20px;
 }
 
 .fa--decoration05 {
@@ -398,6 +403,19 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .footer__block__nav a:visited, .footer__block__nav a:link, .footer__block__nav a:active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   padding: 3px;
   margin: 0;
