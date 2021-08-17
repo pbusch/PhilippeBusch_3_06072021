@@ -56,63 +56,6 @@ h5 {
   font-weight: 900;
 }
 
-/*i {
-    transition: all 1s ease-in-out;
-}
-
-
-.fa--decoration01 {
-    margin-right: 15px;
-    margin-left: -30px;
-}
-
-.fa--decoration02 {
-    padding:25px;
-
-}
-
-.fa--decoration03 {
-    font-size: 1.5rem;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-    color:white;
-    
-    &:hover {
-        color:$secondary-color;
-    }
-    
-}
-
-.fa--decoration03alt {
-    font-size: 1.5rem;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-    color: $background-color;
-    
-    &:hover {
-        color:$secondary-color;
-    }
-    
-
-}
-
-
-
-.fa--decoration04 {
-    padding-right: 10px;
-}
-
-.fa--decoration05 {
-    position: absolute;
-    left: 25px;
-    top:25px;
-}
-
-.fa--decoration06 {
-    color: $tertiary-color;
-    background-color: white;
-    border-radius: 100%;
-    padding: 5px;
-}
-*/
 .loader {
   position: fixed;
   top: 0px;
@@ -340,8 +283,9 @@ i {
 
 .fa--decoration05 {
   position: absolute;
-  left: 25px;
-  top: 25px;
+  font-size: 1.2rem;
+  left: 15%;
+  top: 35%;
 }
 
 .fa--decoration06 {
@@ -381,7 +325,6 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .footer {
-  background-color: #3f3e3e;
   background-color: #464138;
   color: white;
   padding: 10px 20px;
@@ -393,13 +336,7 @@ a:link, a:visited, a:active, a:hover {
   font-family: Shrikhand;
   font-weight: 300;
   margin-bottom: 10px;
-  text-align: center;
-}
-
-@media (max-width: 640px) {
-  .footer__logo h3 {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 .footer__block {
@@ -856,7 +793,6 @@ a:link, a:visited, a:active, a:hover {
 .titre__btn {
   background-color: #ac4caf;
   border: none;
-  color: white;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -936,7 +872,6 @@ a:link, a:visited, a:active, a:hover {
   background-color: #9356DC;
   border-radius: 50%;
   padding: 3px 7px;
-  color: white;
   margin-left: -10px;
 }
 

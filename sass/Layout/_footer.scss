@@ -1,6 +1,5 @@
 .footer  {
 
-    background-color: #3f3e3e;
     background-color: darken($color:$background-color, $amount: 70%);
     color:white;
     padding: 10px 20px;
@@ -10,10 +9,8 @@
             font-family: Shrikhand;
             font-weight: 300;
             margin-bottom: 10px;
-            text-align: center;
-            @media (max-width: 640px) {
-                text-align: left;
-            }
+            text-align: left;
+            
         }
         &__block{
             @include flex(row);

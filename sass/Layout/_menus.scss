@@ -81,13 +81,12 @@
         overflow: hidden;
         cursor: grab;
         grid-template-columns: auto 0;
-        //grid-template-rows: repeat(2, 1fr);
         width:95%;
         background-color: white;
         margin: 10px;
         border-radius: 15px;
         opacity: 0;
-        box-shadow: 5px 5px 5px rgb(234, 230, 230);
+        box-shadow: $box-shadow;
         animation: menus 1.5s linear forwards;
         @include menus-fadein(9);
 
@@ -100,9 +99,7 @@
             font-weight: 900;
             margin:0;
             padding:10px 10px 5px 10px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            @include dots;
             
         
         }
@@ -112,9 +109,7 @@
             margin:0;
             padding:0 10px 10px 10px;
             font-size: 0.9rem;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            @include dots;
             
         }
         &__details {
@@ -122,11 +117,7 @@
             @include flex(row);
             justify-content: space-between;
             transition: all 400ms linear;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-
- 
+            @include dots;
 
             .menu__section__card__details__prix{
                 overflow: visible;

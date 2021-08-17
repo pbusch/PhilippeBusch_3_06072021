@@ -14,11 +14,9 @@
         &__btn {
             background-color: #ac4caf; 
             border: none;
-            color: white;
             padding: 15px;
             text-align: center;
             text-decoration: none;
-            //display: inline-block;
             font-size: 16px;
             margin: 10px 2px;
             cursor: pointer;
@@ -52,7 +50,6 @@
                         background-color: $primary-color;
                         border-radius: 50%;
                         padding: 3px 7px;
-                        color: white;
                         margin-left:-10px;
                     }
                 
@@ -132,12 +129,12 @@
                             height:80px;
                         }
                         &__info h3 {
-                            padding:0 0 5px 0;
-                            margin:0 0 0 -40px;
+                            @include cards-padding;
+
                         }
                         &__info h4 {
-                            padding:0 0 5px 0;
-                            margin:0 0 0 -40px;
+                            @include cards-padding;
+
                         }
                 }
         }
