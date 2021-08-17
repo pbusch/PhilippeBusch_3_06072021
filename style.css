@@ -15,9 +15,9 @@ body {
   font-family: 'Shrikhand';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/shrikhand-v6-latin-regular.eot");
+  src: url("/fonts/shrikhand-v6-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/shrikhand-v6-latin-regular.woff2") format("woff2"), url("../fonts/shrikhand-v6-latin-regular.woff") format("woff"), url("../fonts/shrikhand-v6-latin-regular.ttf") format("truetype"), url("../fonts/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
+  src: local(""), url("/fonts/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/shrikhand-v6-latin-regular.woff2") format("woff2"), url("/fonts/shrikhand-v6-latin-regular.woff") format("woff"), url("/fonts/shrikhand-v6-latin-regular.ttf") format("truetype"), url("/fonts/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
   /* Legacy iOS */
 }
 
@@ -25,9 +25,9 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v27-latin-regular.eot");
+  src: url("/fonts/roboto-v27-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v27-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v27-latin-regular.woff") format("woff"), url("../fonts/roboto-v27-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v27-latin-regular.svg#Roboto") format("svg");
+  src: local(""), url("/fonts/roboto-v27-latin-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-v27-latin-regular.woff2") format("woff2"), url("/fonts/roboto-v27-latin-regular.woff") format("woff"), url("/fonts/roboto-v27-latin-regular.ttf") format("truetype"), url("/fonts/roboto-v27-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
