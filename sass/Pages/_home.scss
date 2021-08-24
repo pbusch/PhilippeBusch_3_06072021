@@ -1,11 +1,11 @@
 .titre {
     @include flex;
     text-align: center;
-    height:286px;
+    height:280px;
     background-color:$background-color;
         &__first {
             max-width:250px;
-            padding-top: 15px;
+            
         }
         &__second {
             max-width:350px;
@@ -44,8 +44,9 @@
                 display:flex;
                 align-items: center;
                 background-color: $background_color;
+                box-shadow: 5px 5px 5px rgb(234, 230, 230);
                 border-radius: 25px;
-                max-width: 300px;
+                max-width: 350px;
                 width: 90%;
                 margin-bottom: 15px;
                 margin-left: 20px;
@@ -86,6 +87,7 @@
                 &__card  {
                     @include flex;
                     position:relative;
+                    box-shadow: 5px 5px 5px rgb(234, 230, 230);
                     border-radius: 15px;
                     margin-bottom: 20px !important;
                     @media (max-width:640px) {
@@ -93,7 +95,7 @@
                     max-width: 90%;
                     margin-left: 0 !important;
                     margin-right: 0 !important;
-                    margin-bottom: 0 !important;
+                    margin-bottom: 10px !important;
                     }
 
                     @media (min-width: 850px) and (max-width:1318px) {
@@ -104,7 +106,7 @@
                     width: 300px;
 
 
-                    //margin: 15px 15px !important;
+                    
                     background-color: white;
                     transition: all 0.5s ease-in-out;
 
@@ -145,9 +147,7 @@
                             justify-content:space-around;
                             height:65px;
                         }
-                        &_nom {
-                            padding-left: -100px;
-                        }
+
                         &__info h3 {
                             @include cards-padding;
 

@@ -1,7 +1,7 @@
 .gps {
     @include flex(row);
     height: 48px;
-    background-color: darken($color:$background-color, $amount: 10%);
+    background-color: darken($color:$background-color, $amount: 5%);
         & h2 {
             color:rgba(19, 20, 20, 0.664);
             font-weight: 300; 
