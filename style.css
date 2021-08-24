@@ -14,6 +14,7 @@ body {
   padding: 0;
   font-family: Roboto;
   width: auto;
+  min-width: 330px;
 }
 
 @font-face {
@@ -254,11 +255,6 @@ h5 {
   margin: 30px 0 70px;
 }
 
-i {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
 .fa--decoration01 {
   margin-right: 15px;
   margin-left: -30px;
@@ -275,6 +271,8 @@ i {
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   color: white;
   margin-bottom: 20px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .fa--decoration03-full {
@@ -307,6 +305,8 @@ i {
   font-size: 1.5rem;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   color: #F6F6F6;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .fa--decoration03alt-full {
@@ -387,10 +387,9 @@ a:link, a:visited, a:active, a:hover {
   position: relative;
   font-family: Shrikhand;
   font-weight: 300;
-}
-
-.header__logo img {
-  width: 164px;
+  /*& img {
+          width: 164px;
+      }*/
 }
 
 .footer {
@@ -501,7 +500,7 @@ a:link, a:visited, a:active, a:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   background-color: #F6F6F6;
 }
@@ -540,23 +539,9 @@ a:link, a:visited, a:active, a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   height: 300px;
-  -o-object-position: 0 -30px;
-     object-position: 0 -30px;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
-}
-
-@media (min-width: 440px) and (max-width: 660px) {
-  .menu__img img {
-    -o-object-position: 0 -70px;
-       object-position: 0 -70px;
-  }
-}
-
-@media (min-width: 660px) {
-  .menu__img img {
-    -o-object-position: 0 -180px;
-       object-position: 0 -180px;
-  }
 }
 
 .menu__titre {
@@ -1102,13 +1087,21 @@ a:link, a:visited, a:active, a:hover {
   height: 65px;
 }
 
+@media (min-width: 768px) {
+  .rest__cards__card__info {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .rest__cards__card__info h3 {
   padding: 0 0 5px 0;
-  margin: 0 0 0 -40px;
+  margin: 0 -10px 0 -40px;
 }
 
 .rest__cards__card__info h4 {
   padding: 0 0 5px 0;
-  margin: 0 0 0 -40px;
+  margin: 0 -10px 0 -40px;
 }
 /*# sourceMappingURL=style.css.map */
