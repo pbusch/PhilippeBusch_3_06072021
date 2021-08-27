@@ -12,7 +12,7 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: Roboto, Verdana;
   width: auto;
   min-width: 330px;
 }
@@ -243,12 +243,12 @@ h5 {
   transition: all 0.8s;
 }
 
-.btn:hover {
+.btn:hover:hover {
   cursor: -webkit-grab;
   cursor: grab;
-  opacity: 0.6;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.63);
-          box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.63);
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 5px 3px #eae6e6;
+          box-shadow: 5px 5px 5px 3px #eae6e6;
 }
 
 .btnmenu {
@@ -387,7 +387,7 @@ a:link, a:visited, a:active, a:hover {
   -webkit-box-shadow: 0px 5px 5px 0px #c1c1c5;
           box-shadow: 0px 5px 5px 0px #c1c1c5;
   position: relative;
-  font-family: Shrikhand;
+  font-family: Shrikhand, verdana;
   font-weight: 300;
 }
 
@@ -400,7 +400,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .footer__logo h3 {
-  font-family: Shrikhand;
+  font-family: Shrikhand, verdana;
   font-weight: 300;
   margin-bottom: 10px;
   text-align: left;
